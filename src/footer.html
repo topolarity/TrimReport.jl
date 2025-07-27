@@ -1,0 +1,20 @@
+    const div = document.getElementById('code-div')
+    div.innerHTML = await codeToHtml(source, {
+      lang: 'julia',
+      theme: 'github-dark-default',
+      transformers: [
+        createTransformerFactory(
+          (code, filename, options) => ({ code, nodes }),
+          /* rendererClassic(), */
+          rendererRich({
+            lang: 'julia',
+            processHoverInfo: type => type,
+          }),
+        )({
+          langs: 'julia',
+        }),
+      ],
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+name = "TrimReport"
+uuid = "68bc80f2-ae2c-4b48-b5f5-2cd4126c14bc"
+version = "0.1.0"
+authors = ["Cody Tapscott <topolarity@tapscott.me>"]
+
+[deps]
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+JuliaLowering = "f3c80556-a63f-4383-b822-37d64f81a311"
+JuliaSyntax = "70703baa-626e-46a2-a12c-08ffd08c73b4"
+
+[sources]
+JuliaLowering = {rev = "jetls-hacking", url = "https://github.com/mlechu/JuliaLowering.jl"}
+JuliaSyntax = {rev = "e02f29f", url = "https://github.com/JuliaLang/JuliaSyntax.jl"}
+
+[compat]
+JSON = "0.21.4"
+JuliaLowering = "1.0.0"
+JuliaSyntax = "1.0"
